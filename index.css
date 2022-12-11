@@ -1,8 +1,15 @@
+:root {
+    --dark: rgb(81, 83, 88);
+    --darker: rgb(69, 75, 90);
+}
+
 body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
+
+    background-color: var(--darker);
 }
 
 input {
@@ -13,8 +20,15 @@ input {
 
     box-sizing: border-box;
 
-    border: 1px solid #5f9341;
+    border: 2px solid #5f9341;
     border-radius: 1rem;
+
+    background: transparent;
+    color: white;
+}
+
+input:active {
+    border: none;
 }
 
 
@@ -52,8 +66,27 @@ button {
     margin-right: 10px;
 }
 
+#tab-btn:hover {
+    background: #41652c;
+}
+
+#tab-btn:active {
+    background: #5f9341;
+}
+
 #delete-btn {
     border: 1px solid #5f9341;
+    background: white;
+    color: #5f9341;
+    transition: 0.1s;
+}
+
+#delete-btn:hover {
+    background: #5f9341;
+    color: white;
+}
+
+#delete-btn:active {
     background: white;
     color: #5f9341;
 }
@@ -69,5 +102,5 @@ li {
 }
 
 a {
-    color: #5f9341;
+    color: #caffab;
 }
