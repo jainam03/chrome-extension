@@ -12,6 +12,11 @@ body {
     background-color: var(--darker);
 }
 
+h3 {
+    text-align: center;
+    color: white;
+}
+
 input {
     width: 100%;
 
@@ -28,7 +33,7 @@ input {
 }
 
 input:active {
-    border: none;
+    border: 2px solid #5f9341
 }
 
 
